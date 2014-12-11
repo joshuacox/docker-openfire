@@ -1,5 +1,5 @@
-FROM sameersbn/ubuntu:14.04.20141026
-MAINTAINER sameer@damagehead.com
+FROM joshuacox/ubuntu:14.04
+MAINTAINER Josh Cox "josh at webhosting coop"
 
 ENV OPENFIRE_VERSION 3.9.3
 RUN apt-get update \
@@ -10,19 +10,19 @@ RUN apt-get update \
  && rm -rf openfire_${OPENFIRE_VERSION}_all.deb \
  && rm -rf /var/lib/apt/lists/* # 20140918
 
-ADD start /start
-RUN chmod 755 /start
+#ADD start /start
+#RUN chmod 755 /start
 
-EXPOSE 3478
-EXPOSE 3479
-EXPOSE 5222
-EXPOSE 5223
-EXPOSE 5229
-EXPOSE 7070
-EXPOSE 7443
-EXPOSE 7777
-EXPOSE 9090
-EXPOSE 9091
+#EXPOSE 3478
+#EXPOSE 3479
+#EXPOSE 5222
+#EXPOSE 5223
+#EXPOSE 5229
+#EXPOSE 7070
+#EXPOSE 7443
+#EXPOSE 7777
+#EXPOSE 9090
+#EXPOSE 9091
 
-VOLUME ["/data"]
-CMD ["/start"]
+#VOLUME ["/data"]
+#CMD ["/start"]
