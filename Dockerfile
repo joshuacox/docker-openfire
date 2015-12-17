@@ -1,7 +1,7 @@
 FROM joshuacox/ubuntu:14.04
 MAINTAINER Josh Cox "josh at webhosting coop"
 
-ENV DOCKER_OPENFIRE_UPDATED 20151210
+ENV DOCKER_OPENFIRE_UPDATED 20151217
 ENV OPENFIRE_VERSION 3.9.3
 RUN apt-get update \
  && apt-get install -y openjdk-7-jre \
